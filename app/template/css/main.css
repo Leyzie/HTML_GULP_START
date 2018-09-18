@@ -1,0 +1,29 @@
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    min-width: 320px;
+    padding: 20px;
+
+    color: #151515;
+}
+
+*,
+*:focus
+{
+    outline: 0;
+}
+
+.img-responsive
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
