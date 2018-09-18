@@ -1,17 +1,57 @@
+@font-face
+{
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/HelveticaNeueCyr-Thin.eot');
+    src: url('../fonts/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/HelveticaNeueCyr-Light.eot');
+    src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+}
+
 body
 {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.65;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-weight: 300;
 
     position: relative;
 
     overflow-x: hidden;
 
     min-width: 320px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 
-    color: #151515;
+    color: #2a2927;
 }
 
 *,
@@ -26,4 +66,36 @@ body
 
     max-width: 100%;
     height: auto;
+}
+
+.container
+{
+    max-width: 1284px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container .row
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+@media screen and (max-width: 780px)
+{
+    .container
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
